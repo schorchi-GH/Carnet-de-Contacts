@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnet de contacts</title>
+    <style>
+        input[type="text"] {
+            font-size: 16px;
+            padding: 10px;
+            width: 20%;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px;
+            margin: 5px 0;
+            width: 15%;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+        #tableauContact { 
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #form-carnet {
+            margin-top: 120px;
+            margin-bottom: 150px;
+        }
+        th {
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <h1 style="text-align: center;">Mon Carnet de Contacts</h1>
+    </header>
+    <div class="form-container">
+    <form id="form-carnet">
+        <input type="text" id="nom" placeholder="Nom">
+        <input type="text" id="téléphone" placeholder="Téléphone">
+        <button type="submit">Registrer +</button>
+    </form>
+    </div>
+    <table id="tableauContact">
+        <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Téléphone</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>
